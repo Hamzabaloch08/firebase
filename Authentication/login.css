@@ -1,0 +1,108 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #74b9ff 0%, #dfe6e9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 94%; /* Make the input fields stretch across the container */
+  }
+  
+  button {
+    transition: background 0.3s, transform 0.2s;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: #0984e3;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%; /* Make the button fill the width as well */
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:hover {
+    background: #74b9ff;
+    transform: scale(1.05);
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  input[type="password"]:focus + .toggle-password {
+    opacity: 0.7;
+  }  
