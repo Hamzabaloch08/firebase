@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form class="card">
+        <h2>Sign Up</h2>
+        <input type="email" placeholder="Email" class="input-field" id="email" required>
+        <div class="password-wrapper">
+            <input type="password" placeholder="Password" class="input-field" id="password" required>
+            <span class="toggle-password">👁️</span>
+        </div>
+        <button class="button" id="signup-button">Sign Up</button>
+        <p class="account-text">Already have an account? <a href="../login/login.html">Login</a></p>
+    </form>
+
+
+
+    <script type="module" src="../firebase.js"></script>
+    <script type="module" src="./signup.js"></script>
+    <script type="module" src="../app.js" ></script>
+</body>
+
+</html>
